@@ -1,0 +1,41 @@
+#sidebar{
+  background-image: linear-gradient(135deg, rgb(43, 142, 169), rgb(43, 69, 169));
+  background-color: rgb(43, 69, 169);
+  padding: 0 40px;
+}
+
+body{
+  font-family: 'Signika';
+}
+
+h1{
+  font-family: 'Merriweather';
+  font-weight: normal;
+  font-size: 58px !important;
+}
+
+h3{
+  color: #000;
+}
+
+#sidebar p{
+  font-size: 20px;
+  padding-top: 60px;
+}
+
+p.second{
+  opacity: .5;
+  margin-top: 100px !important;
+}
+
+p.mini{
+  font-size: 16px;
+}
+
+.text-muted{
+  font-family: 'Signika';
+}
+
+.gray{
+  background-color: rgba(0,0,0,.02);
+}

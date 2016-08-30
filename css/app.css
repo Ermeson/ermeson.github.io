@@ -9,7 +9,7 @@ body{
 }
 
 html, body{
-  display: inline-flex;
+  display: inline-flex !important;
 }
 
 .avatar img{

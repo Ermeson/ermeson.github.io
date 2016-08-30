@@ -6,7 +6,10 @@
 
 body{
   font-family: 'Signika';
-  display: inherit;
+}
+
+html, body{
+  display: inline-flex;
 }
 
 .avatar img{

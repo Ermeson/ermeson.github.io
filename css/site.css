@@ -32,6 +32,9 @@ h4{
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+a.links:hover{
+	color: #686868;
+}
 
 .btn-primary:hover{
   background: #026ed2;
@@ -74,4 +77,7 @@ hr{
 
 .mini{
   font-size: 16px;
+}
+.post-meta > a:link{
+	color: #686868;
 }

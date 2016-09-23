@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
 	//on scroll gets when bottom of the page is reached and calls the function do load more content
 	$(window).scroll(function(e){
 		//Not always the pos == h statement is verified, expecially on mobile devices, that's why a 300px of margin are assumed.
-		if($(window).scrollTop() + $(window).height() >= $(document).height() - 1000) {
+		if($(window).scrollTop() + $(window).height() >= $(document).height() - 1500) {
 			console.log("bottom of the page reached!");
 
 			//in some broswer (es. chrome) if the scroll is fast, the bottom

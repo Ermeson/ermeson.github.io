@@ -81,3 +81,12 @@ hr{
 .post-meta > a:link{
 	color: #686868;
 }
+
+a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-primary:hover a{
+  color: #fff !important;
+}

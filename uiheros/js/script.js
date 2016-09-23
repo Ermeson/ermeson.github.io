@@ -18,23 +18,23 @@ jQuery(document).ready(function() {
 	//on scroll gets when bottom of the page is reached and calls the function do load more content
 	$(window).scroll(function(e){
 		//Not always the pos == h statement is verified, expecially on mobile devices, that's why a 300px of margin are assumed.
-		if($(window).scrollTop() + $(window).height() >= $(document).height() - 300) {
+		if($(window).scrollTop() + $(window).height() >= $(document).height() - 1000) {
 			console.log("bottom of the page reached!");
 
-			//in some broswer (es. chrome) if the scroll is fast, the bottom 
-			//reach events fires several times, this may cause the page loaging 
-			//more than once. To prevent such situation every time the bottom is 
-			//reached the number of time is added to that page in suach a way to call 
-			//the loadMoreContent page only when the page value in "loaded" array is 
+			//in some broswer (es. chrome) if the scroll is fast, the bottom
+			//reach events fires several times, this may cause the page loaging
+			//more than once. To prevent such situation every time the bottom is
+			//reached the number of time is added to that page in suach a way to call
+			//the loadMoreContent page only when the page value in "loaded" array is
 			//minor or equal to one
-			loaded[pages[current+1]] = loaded[pages[current+1]] + 1; 
+			loaded[pages[current+1]] = loaded[pages[current+1]] + 1;
 
 			if(loaded[pages[current+1]] <= 1)
 				loadMoreContent(current+1);
 		}
 	});
 
-	//loads the next page and append it to the content with a fadeIn effect. 
+	//loads the next page and append it to the content with a fadeIn effect.
 	//Before loading the content it shows and hides the loaden Overlay DIV
 	function loadMoreContent(position) {
 		//try to load more content only if the counter is minor than the number of total pages
